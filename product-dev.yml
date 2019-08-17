@@ -9,8 +9,6 @@ server:
   #servlet:
     #context-path: /product
 spring:
-  application:
-    name: product
   # JSON相关配置
   jackson:
     locale: zh_CN
