@@ -23,7 +23,17 @@ spring:
     bus:
       enabled: true
       refresh:
-        enabled: true      
+        enabled: true   
+        
+# 断路器相关配置（注：更多配置和配置的的意思可以查看HystrixController类）
+management:
+  endpoint:
+    hystrix:
+      config:
+        execution:
+          isolation:
+            thread: 
+              timeoutInMilliseconds: 2000        
           
 # 日志级别相关      
 logging:
