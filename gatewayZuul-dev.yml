@@ -1,0 +1,26 @@
+spring:      
+  # RabbitMQ相关配置（注意：我们这里面配置MQ的原因是Spring Cloud Bus要使用，它的配置刷新就是通过MQ来做的）
+  rabbitmq:
+    addresses: 192.168.229.132:5672
+    username: guest
+    password: guest
+    virtual-host: /  
+    
+  # Spring Cloud Bus 配置Config自动刷新  
+  cloud:
+    bus:
+      enabled: true
+      refresh:
+        enabled: true      
+          
+# 日志级别相关      
+logging:
+  level:
+    org.springframework.cloud.netflix.feign: debug
+    com.firecode.elktest.biz.dao: debug
+    org.hibernate.SQL: debug
+    
+# 开启全局debug日志    
+#debug: true
+
+config_test: 我是测试配置自动刷新的1212
