@@ -1,0 +1,22 @@
+server:
+  # 禁用 Spring 生成404等错误信息，返回到前台
+  error:
+    whitelabel:
+      enabled: false
+  port: 8084
+  tomcat:
+    uri-encoding: UTF-8
+  #servlet:
+    #context-path: /user
+spring:
+  # JSON相关配置
+  jackson:
+    locale: zh_CN
+    default-property-inclusion: non-null
+  # JPA相关配置  
+  jpa:
+    database: mysql
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
