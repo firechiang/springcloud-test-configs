@@ -10,17 +10,7 @@ spring:
       auto-commit: true
       # 测试连接是否有效的查询语句
       connection-test-query: select 1
-      
-  # Redis相关配置    
-  redis:
-    database: 0
-    host: 127.0.0.1
-    port: 6379
-    timeout: 3000
-    jedis:
-      pool:
-        min-idle: 1  
-        
+              
   # RabbitMQ相关配置（注意：我们这里面配置MQ的原因是Spring Cloud Bus要使用，它的配置刷新就是通过MQ来做的）
   rabbitmq:
     addresses: 192.168.229.132:5672
