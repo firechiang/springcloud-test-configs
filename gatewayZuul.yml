@@ -13,6 +13,7 @@ server:
 zuul:
   # 自定义路由规则（注：下面的配置是将/testProduct/**路由到product服务上去（就是可以使用/testProduct访问product服务））
   routes:
+    # 规则名称（可以随便写）
     testProduct:
       path: /testProduct/**
       service-id: product
