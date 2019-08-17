@@ -11,7 +11,7 @@ server:
     
 # zuul相关配置     
 zuul:
-  # 禁止访问某些地址
+  # 禁止访问某些地址（可以使用通配符的方式配置，比如*代表一层，**代表多层）
   ignored-patterns:
     /product/config_test
   # 自定义路由规则（注：下面的配置是将/testProduct/**路由到product服务上去（就是可以使用/testProduct访问product服务））
