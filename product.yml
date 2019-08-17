@@ -19,11 +19,4 @@ spring:
     generate-ddl: false
     show-sql: true
     hibernate:
-      ddl-auto: none      
-# 日志级别相关      
-logging:
-  level:
-    com.firecode.elktest.biz.dao: debug
-    org.hibernate.SQL: debug
-# 开启全局debug日志    
-#debug: true
+      ddl-auto: none
