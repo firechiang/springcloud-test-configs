@@ -29,6 +29,9 @@ spring:
 management:
   endpoint:
     hystrix:
+      stream:
+        # 开启监控
+        enabled: true
       config:
         execution:
           isolation:
