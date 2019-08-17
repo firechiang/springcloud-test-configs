@@ -6,8 +6,8 @@ server:
   port: 8081
   tomcat:
     uri-encoding: UTF-8
-  #servlet:
-    #context-path: /order
+  servlet:
+    context-path: /
 spring:
   # JSON相关配置
   jackson:
