@@ -10,4 +10,12 @@ spring:
       auto-commit: true
       # 测试连接是否有效的查询语句
       connection-test-query: select 1
+  
+# 日志级别相关      
+logging:
+  level:
+    com.firecode.elktest.biz.dao: debug
+    org.hibernate.SQL: debug
+# 开启全局debug日志    
+#debug: true  
 
