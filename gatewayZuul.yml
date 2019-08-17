@@ -17,6 +17,8 @@ zuul:
     testProduct:
       path: /testProduct/**
       service-id: product
+    # 上面配置的简洁写法（服务名称:路由规则）  
+    #product: /testProduct/**
       
 spring:
   # JSON相关配置
