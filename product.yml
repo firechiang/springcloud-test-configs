@@ -13,17 +13,6 @@ spring:
   jackson:
     locale: zh_CN
     default-property-inclusion: non-null
-  # 数据源相关配置
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.229.132:3306/springcloud_demo?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&autoReconnect=true&zeroDateTimeBehavior=convertToNull
-    username: root
-    password: Jiang@123
-    type: com.zaxxer.hikari.HikariDataSource
-    hikari:
-      auto-commit: true
-      # 测试连接是否有效的查询语句
-      connection-test-query: select 1
   # JPA相关配置  
   jpa:
     database: mysql
