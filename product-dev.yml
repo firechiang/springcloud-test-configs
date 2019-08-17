@@ -16,7 +16,14 @@ spring:
     addresses: 192.168.229.132:5672
     username: guest
     password: guest
-    virtual-host: /   
+    virtual-host: /  
+    
+  # Spring Cloud Bus 配置Config自动刷新  
+  cloud:
+    bus:
+      enabled: true
+      refresh:
+        enabled: true  
   
 # 日志级别相关      
 logging:
