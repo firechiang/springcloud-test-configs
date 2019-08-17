@@ -8,6 +8,15 @@ server:
     uri-encoding: UTF-8
   #servlet:
     #context-path: /gatewayZuul
+    
+# zuul相关配置     
+zuul:
+  # 自定义路由规则（注：下面的配置是将/testProduct/**路由到product服务上去（就是可以使用/testProduct访问product服务））
+  routes:
+    testProduct:
+      path: /testProduct/**
+      service-id: product
+      
 spring:
   # JSON相关配置
   jackson:
