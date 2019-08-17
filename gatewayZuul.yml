@@ -1,0 +1,15 @@
+server:
+  # 禁用 Spring 生成404等错误信息，返回到前台
+  error:
+    whitelabel:
+      enabled: false
+  port: 8083
+  tomcat:
+    uri-encoding: UTF-8
+  #servlet:
+    #context-path: /gatewayZuul
+spring:
+  # JSON相关配置
+  jackson:
+    locale: zh_CN
+    default-property-inclusion: non-null
