@@ -9,8 +9,6 @@ server:
   #servlet:
     #context-path: /order
 spring:
-  application:
-    name: order
   # JSON相关配置
   jackson:
     locale: zh_CN
