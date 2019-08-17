@@ -45,4 +45,4 @@ logging:
 # 开启全局debug日志    
 #debug: true
 
-config_test: 我是测试配置自动刷新的
+config_test: 我是测试配置自动刷新的1212
