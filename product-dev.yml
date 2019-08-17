@@ -33,5 +33,5 @@ logging:
 # 开启全局debug日志    
 #debug: true  
 
-config_test: 我是测试配置是否自动刷新的值1313
+config_test: 我是测试配置是否自动刷新的值
 
