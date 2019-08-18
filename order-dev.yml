@@ -33,7 +33,6 @@ management:
         execution:
           isolation:
             thread: 
-              # 这个配置可以作用在Zuul访问超时上
               timeoutInMilliseconds: 5000        
           
 # 日志级别相关      
