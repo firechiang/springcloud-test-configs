@@ -40,7 +40,6 @@ management:
 logging:
   level:
     org.springframework.cloud.netflix.feign: debug
-    com.firecode.elktest.biz.dao: debug
     org.hibernate.SQL: debug
     
 # 开启全局debug日志    
